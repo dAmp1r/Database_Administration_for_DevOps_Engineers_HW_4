@@ -30,14 +30,14 @@ services:
 ```create database test_databases;```                 
 ```psql -U postgres test_databases < test_dump.sql```            
 ```select attname, avg_width from pg_stats where tablename = 'orders' order by avg_width desc limit 1;```                
-![вывод команды]()
+![вывод команды](https://github.com/dAmp1r/Database_Administration_for_DevOps_Engineers_HW_4/blob/main/21.png)
 
 Задание 3.
 
 ```begin;```              
 ```create table orders_expensive as select * from orders where price > 499;```             
 ```commit;```                   
-![]()              
+![](https://github.com/dAmp1r/Database_Administration_for_DevOps_Engineers_HW_4/blob/main/31.png)              
 - Если при создание изначально таблицы - разибить ей на несколько используя функцию партиционирования и разбить данные по таблицам по нужным критериям               
 
 Задание 4.
